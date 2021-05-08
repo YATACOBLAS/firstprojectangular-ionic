@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+   
+    <ion-title>Add Place</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+   <ion-card-content>
+     <ion-input type="text" placeholder="title" #title></ion-input>
+     <ion-input type="url" placeholder="www.imageweb.com" #imageUrl></ion-input>
+     <ion-button  (click)="addPlace(title,imageUrl)"> Add </ion-button>
+   </ion-card-content>
+  </ion-card>
+</ion-content>
